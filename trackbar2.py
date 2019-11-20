@@ -14,7 +14,7 @@ cv2.createTrackbar(switch,'image',0,1,nothing)
 
 while 1:
     img = cv2.imread('lena.jpg')
-    img = cv2.imshow('image',img)
+    
     pos = cv2.getTrackbarPos('CP','image')
     cv2.putText(img,str(pos),(50,250),cv2.FONT_HERSHEY_SIMPLEX,4,(255,0,0))
     k = cv2.waitKey(1) 
@@ -28,4 +28,5 @@ while 1:
         pass
     else:
         img = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+    img = cv2.imshow('image',img)
 cv2.destroyAllWindows()
