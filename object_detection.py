@@ -24,6 +24,7 @@ while True:
     u_s = cv2.getTrackbarPos('US','Tracking')
     u_v = cv2.getTrackbarPos('UV','Tracking')
 
+
     l_b = (l_h,l_s,l_v)
     u_b = (u_h,u_s,u_v)
 
