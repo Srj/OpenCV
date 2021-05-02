@@ -3,9 +3,10 @@ import cv2
 
 #Open a image file. 
 #Doesn't raise exception if file not found.Returns None.
-img = cv2.imread('lena.jpg',0)
+img = cv2.imread('data/IO.png',0)
 
-#display image
+print(type(img))
+# display image
 #Display only for a miliseconds
 cv2.imshow('image',img)
 
